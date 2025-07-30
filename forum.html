@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forum | TechHead</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #111;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+
+    .search-box {
+      border-radius: 999px;
+      border: 2px solid #ccc;
+      padding-left: 1rem;
+    }
+
+    .filter-buttons .btn {
+      border-radius: 999px;
+      padding: 0.3rem 1rem;
+      font-size: 0.85rem;
+    }
+
+    .post-card {
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 1rem;
+      background: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .post-card:hover {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .tags span {
+      background-color: #e0e0e0;
+      border-radius: 999px;
+      padding: 0.25rem 0.75rem;
+      font-size: 0.75rem;
+      margin-right: 0.3rem;
+    }
+
+    .sidebar {
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      background: white;
+      padding: 1rem;
+    }
+
+    .sidebar h6 {
+      font-weight: bold;
+      margin-bottom: 0.75rem;
+    }
+    .login-left {
+      backdrop-filter: blur(15px);
+    }
+    .login-left h1 {
+      font-family: 'Orbitron', sans-serif;
+      color: #ffffff;
+      text-shadow: 0 0 10px rgba(255,255,255,0.3);
+    }
+    footer {
+      flex-shrink: 0;
+      width: 100%;
+      background-color: #111;
+      color: white;
+      padding: 1.5rem 0;
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm px-4">
+    <div class="login-container">
+      <div class="login-left">
+        <h1><a class="navbar-brand" href="#">TechHead</a></h1>
+      </div>
+    </div>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item"><a class="nav-link" href="home.html">Beranda</a></li>
+      <li class="nav-item"><a class="nav-link" href="kategori.html">Kategori</a></li>
+      <li class="nav-item"><a class="nav-link" href="forum.html">Forum</a></li>
+      <li class="nav-item"><a class="nav-link" href="newsletter.html">Newsletter</a></li>
+    </ul>
+    <form class="d-flex">
+          <input class="form-control search-box" type="search" placeholder="Search..." />
+          <button class="btn btn-link text-white ms-2" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+  </div>
+</nav>
+
+  
+  <div class="container py-4 flex-grow-1">
+    <div class="row">
+      
+      <div class="col-lg-8">
+        <div class="mb-3 filter-buttons">
+          <button class="btn btn-outline-primary btn-sm">Terbaru</button>
+          <button class="btn btn-outline-secondary btn-sm">Teratas</button>
+          <button class="btn btn-outline-secondary btn-sm">Hot</button>
+          <button class="btn btn-outline-secondary btn-sm">Tertutup</button>
+        </div>
+        <div class="post-card mb-3">
+          <div class="d-flex justify-content-between">
+            <div><strong>User5562</strong> <small class="text-muted">• 10 menit lalu</small></div>
+            <i class="bi bi-three-dots"></i>
+          </div>
+          <div class="fw-semibold mt-2">Apa HP terbaik untuk fotografi malam di bawah 5 juta?</div>
+          <p class="text-muted small mb-2">Saya sedang cari HP untuk motret malam hari, tapi budget terbatas. Ada rekomendasi dengan kamera yang bagus untuk low light?</p>
+          <div class="tags mb-2">
+            <span>kamera</span><span>smartphone</span><span>lowlight</span>
+          </div>
+          <div class="text-muted small d-flex justify-content-between">
+            <div><i class="bi bi-eye"></i> 190</div>
+            <div><i class="bi bi-chat"></i> 22</div>
+            <div><i class="bi bi-heart"></i> 87</div>
+          </div>
+        </div>
+
+        <div class="post-card mb-3">
+          <div class="d-flex justify-content-between">
+            <div><strong>Teknohunter</strong> <small class="text-muted">• 1 jam lalu</small></div>
+            <i class="bi bi-three-dots"></i>
+          </div>
+          <div class="fw-semibold mt-2">Laptop apa yang cocok untuk anak desain grafis pemula?</div>
+          <p class="text-muted small mb-2">Butuh laptop untuk adik saya yang baru mulai belajar desain grafis. Kira-kira butuh spek apa aja ya biar nggak lemot?</p>
+          <div class="tags mb-2">
+            <span>laptop</span><span>desain</span><span>pemula</span>
+          </div>
+          <div class="text-muted small d-flex justify-content-between">
+            <div><i class="bi bi-eye"></i> 132</div>
+            <div><i class="bi bi-chat"></i> 18</div>
+            <div><i class="bi bi-heart"></i> 102</div>
+          </div>
+        </div>
+
+        <div class="post-card mb-3">
+          <div class="d-flex justify-content-between">
+            <div><strong>KamilaTech</strong> <small class="text-muted">• 3 jam lalu</small></div>
+            <i class="bi bi-three-dots"></i>
+          </div>
+          <div class="fw-semibold mt-2">Rekomendasi kamera mirrorless terbaik untuk content creator</div>
+          <p class="text-muted small mb-2">Saya butuh kamera mirrorless buat konten YouTube dan TikTok. Harus yang ringan, hasil bagus, dan gampang dipakai.</p>
+          <div class="tags mb-2">
+            <span>kamera</span><span>mirrorless</span><span>contentcreator</span>
+          </div>
+          <div class="text-muted small d-flex justify-content-between">
+            <div><i class="bi bi-eye"></i> 98</div>
+            <div><i class="bi bi-chat"></i> 10</div>
+            <div><i class="bi bi-heart"></i> 46</div>
+          </div>
+        </div>
+
+        
+        <div class="post-card mb-3">
+          <div class="d-flex justify-content-between">
+            <div><strong>David</strong> <small class="text-muted">• 1 hari lalu</small></div>
+            <i class="bi bi-three-dots"></i>
+          </div>
+          <div class="fw-semibold mt-2">Android vs iPhone: Mana yang lebih tahan lama untuk dipakai 5 tahun?</div>
+          <p class="text-muted small mb-2">Saya bingung mau upgrade HP, antara flagship Android atau iPhone. Mana yang lebih awet dan nggak cepet usang?</p>
+          <div class="tags mb-2">
+            <span>android</span><span>iphone</span><span>smartphone</span>
+          </div>
+          <div class="text-muted small d-flex justify-content-between">
+            <div><i class="bi bi-eye"></i> 1455</div>
+            <div><i class="bi bi-chat"></i> 267</div>
+            <div><i class="bi bi-heart"></i> 678</div>
+          </div>
+        </div>
+
+        
+        <div class="post-card mb-3">
+          <div class="d-flex justify-content-between">
+            <div><strong>Audiophile101</strong> <small class="text-muted">• 2 hari lalu</small></div>
+            <i class="bi bi-three-dots"></i>
+          </div>
+          <div class="fw-semibold mt-2">Speaker Bluetooth dengan suara bass nendang di harga 1 jutaan</div>
+          <p class="text-muted small mb-2">Lagi nyari speaker portable buat dibawa nongkrong, tapi tetep pengen kualitas suara yang mantap.</p>
+          <div class="tags mb-2">
+            <span>speaker</span><span>bluetooth</span><span>bass</span>
+          </div>
+          <div class="text-muted small d-flex justify-content-between">
+            <div><i class="bi bi-eye"></i> 132</div>
+            <div><i class="bi bi-chat"></i> 18</div>
+            <div><i class="bi bi-heart"></i> 102</div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-lg-4">
+        <div class="sidebar mb-3">
+          <h6>Must-read posts</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none text-primary small">• Rekomendasi Laptop Budget 7 Jutaan Tahun 2025</a></li>
+            <li><a href="#" class="text-decoration-none text-primary small">• Cara Reroll Update Windows ke Versi Sebelumnya</a></li>
+          </ul>
+          <h6 class="mt-4">Featured posts</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none text-primary small">• Raja Terakhir Laptop Gaming 2025, Asus ROG STRIX SCAR!</a></li>
+            <li><a href="#" class="text-decoration-none text-primary small">• Hasselblad Perkenalkan Kamera Dengan Sensor Paling Canggih!</a></li>
+            <li><a href="#" class="text-decoration-none text-primary small">• Penyebab Langkanya Stok Chipset GPU</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-0 small">© 2025 TechHead. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

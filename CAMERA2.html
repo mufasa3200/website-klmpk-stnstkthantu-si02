@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Detail | TechHead</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+    }
+    .navbar {
+      background-color: #111;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    .search-box {
+      border-radius: 999px;
+      border: 2px solid #ccc;
+      padding-left: 1rem;
+    }
+    .product-section img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .spec-box {
+      border: 1px solid #000;
+      border-radius: 25px;
+      padding: 0.5rem 1rem;
+      margin-bottom: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .related-article-box {
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        padding: 1rem;
+        width: 240px;
+        background-color: #fff;
+        transition: transform 0.2s ease;
+    }
+
+    .related-article-box:hover {
+        transform: scale(1.03);
+    }
+
+    .related-article-box img {
+        object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm px-4">
+    <a class="navbar-brand" href="#">TechHead</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="home.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="kategori.html">Kategori</a></li>
+        <li class="nav-item"><a class="nav-link" href="forum.html">Forum</a></li>
+        <li class="nav-item"><a class="nav-link" href="newsletter.html">Newsletter</a></li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control search-box" type="search" placeholder="Search..." />
+        <button class="btn btn-link text-white ms-2" type="submit"><i class="bi bi-search"></i></button>
+      </form>
+    </div>
+  </nav>
+  <div class="container my-5">
+    <div class="row g-4 align-items-start">
+      <div class="col-12 col-lg-6">
+        <h5 class="fw-bold">Produk Yang di Highlight</h5>
+        <h3>Fujifilm XT-1</h3>
+        <img src="Asset Final Project/Fuji.png" alt="Fujifilm XT-1" class="img-fluid fixed-ratio-img" />
+      </div>
+      <div class="col-12 col-lg-6">
+        <h4 class="fw-bold text-center mb-3">Spesifikasi</h4>
+        <table class="table table-bordered">
+          <tbody>
+            <tr><th scope="row">Tipe Kamera</th><td>Mirrorless digital camera</td></tr>
+            <tr><th scope="row">Sensor</th><td>APS-C (23.6 x 15.6 mm) X-Trans CMOS II</td></tr>
+            <tr><th scope="row">Resolusi Efektif</th><td>16.3 megapiksel</td></tr>
+            <tr><th scope="row">Image Processor</th><td>EXR Processor II</td></tr>
+            <tr><th scope="row">Mount Lensa</th><td>Fujifilm X-mount</td></tr>
+            <tr><th scope="row">ISO Range</th><td>200–6.400 (dapat diperluas ke 100–51.200)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="row mt-5 g-4">
+      <h5 class="fw-bold mb-3">Berita Terkait - Fujifilm XT-1</h5>
+<div class="d-flex flex-row gap-3 flex-wrap mb-5">
+  <button class="btn related-article-box d-flex flex-column align-items-center text-center">
+    <img src="Asset Final Project/fuji.png" alt="Fujifilm XT-1" width="50" class="mb-2">
+    <span>Fujifilm XT-1: Retro Look, Hasil Modern</span>
+  </button>
+  <button class="btn related-article-box d-flex flex-column align-items-center text-center">
+    <img src="Asset Final Project/fuji.png" alt="Fujifilm XT-1" width="50" class="mb-2">
+    <span>XT-1 vs XT-3: Worth It Gak Beli Seri Lama?</span>
+  </button>
+  <button class="btn related-article-box d-flex flex-column align-items-center text-center">
+    <img src="Asset Final Project/fuji.png" alt="Fujifilm XT-1" width="50" class="mb-2">
+    <span>Kualitas Warna Fujifilm XT-1 Masih Jadi Andalan?</span>
+  </button>
+  <button class="btn related-article-box d-flex flex-column align-items-center text-center">
+    <img src="Asset Final Project/fuji.png" alt="Fujifilm XT-1" width="50" class="mb-2">
+    <span>XT-1: Kamera Budget Ideal untuk Fotografer Pemula</span>
+  </button>
+</div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

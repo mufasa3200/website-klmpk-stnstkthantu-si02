@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beranda | TechHead</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8f8f8;
+    }
+    .navbar {
+      background-color: #111;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    .search-box {
+      border-radius: 999px;
+      border: 2px solid #ccc;
+      padding-left: 1rem;
+    }
+    .carousel-inner {
+      background: #e0e0e0;
+      height: 250px;
+    }
+    .category-box img,
+    .article-box img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid #ccc;
+    }
+    .category-text,
+    .article-text {
+      text-align: center;
+      margin-top: 8px;
+      font-weight: 500;
+    }
+    .article-box {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 10px;
+      height: 100%;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .login-left {
+      backdrop-filter: blur(15px);
+    }
+    .login-left h1 {
+      font-family: 'Orbitron', sans-serif;
+      color: #ffffff;
+      text-shadow: 0 0 10px rgba(255,255,255,0.3);
+    }
+    footer {
+      background-color: #111;
+      color: white;
+      padding: 2rem 0;
+    }
+    .kategori-produk img {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto 10px;
+    }
+    .kategori-produk .produk-item {
+      text-align: center;
+      margin: 0 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm px-4">
+    <div class="login-container">
+      <div class="login-left">
+        <h1><a class="navbar-brand" href="#">TechHead</a></h1>
+      </div>
+    </div>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item"><a class="nav-link" href="home.html">Beranda</a></li>
+      <li class="nav-item"><a class="nav-link" href="kategori.html">Kategori</a></li>
+      <li class="nav-item"><a class="nav-link" href="forum.html">Forum</a></li>
+      <li class="nav-item"><a class="nav-link" href="newsletter.html">Newsletter</a></li>
+    </ul>
+    <form class="d-flex">
+          <input class="form-control search-box" type="search" placeholder="Search..." />
+          <button class="btn btn-link text-white ms-2" type="submit"><i class="bi bi-search"></i></button>
+        </form>
+  </div>
+</nav>
+
+<!-- CAROUSEL -->
+<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Asset Final Project/pexels-danbuilds-633409.jpg" class="d-block w-100" alt="Banner 1">
+    </div>
+    <div class="carousel-item">
+      <img src="Asset Final Project/pexels-derice-jason-fahnkow-745824-1595241.jpg" class="d-block w-100" alt="Banner 2">
+    </div>
+    <div class="carousel-item">
+      <img src="Asset Final Project/pexels-natri-128611.jpg" class="d-block w-100" alt="Banner 2">
+    </div>
+  </div>
+</div>
+<div class="container my-5">
+  <h3 class="text-center fw-bold mb-4">Kategori Produk</h3>
+  <div class="kategori-produk d-flex justify-content-center mt-4 gap-5">
+  <div class="produk-item">
+    <img src="Asset Final Project/Marshall.png" alt="Speaker">
+    <p>Speaker</p>
+  </div>
+  <div class="produk-item">
+    <img src="Asset Final Project/Iphone.png" alt="Smartphone">
+    <p>Smartphone</p>
+  </div>
+  <div class="produk-item">
+    <img src="Asset Final Project/Fuji.png" alt="Kamera">
+    <p>Kamera</p>
+  </div>
+  <div class="produk-item">
+    <img src="Asset Final Project/HP.png" alt="Laptop">
+    <p>Laptop</p>
+  </div>
+</div>
+</div>
+<div class="container my-5">
+  <h3 class="fw-bold mb-4">Artikel Terbaru</h3>
+  <div class="row g-4">
+    <div class="col-6 col-md-2"><div class="article-box"><img src="Asset Final Project/kameraartikel.jpg" alt=""><div class="article-text">Kamera Mirrorless vs DSLR: Mana yang Cocok Buat Content Creator?</div></div></div>
+    <div class="col-6 col-md-2"><div class="article-box"><img src="Asset Final Project/Rekomendasi Laptop 2025 Buat Mahasiswa dan Pekerja Kreatif.jpg" alt=""><div class="article-text">Rekomendasi Laptop 2025 Buat Mahasiswa dan Pekerja Kreatif</div></div></div>
+    <div class="col-6 col-md-2"><div class="article-box"><img src="Asset Final Project/Update Teknologi Minggu Ini.jpg" alt=""><div class="article-text">Update Teknologi Minggu Ini: Gadget, Tips, dan Review Terkini</div></div></div>
+    <div class="col-6 col-md-2"><div class="article-box"><img src="Asset Final Project/Teknologi Audio Baru yang Bikin Musik Makin Hidup.jpg" alt=""><div class="article-text">Teknologi Audio Baru yang Bikin Musik Makin Hidup</div></div></div>
+    <div class="col-6 col-md-2"><div class="article-box"><img src="Asset Final Project/Smartphone Terbaik 2025 Fitur Gila dan Harga yang Masuk Akal.jpg" alt=""><div class="article-text">Smartphone Terbaik 2025: Fitur Gila dan Harga yang Masuk Akal</div></div></div>
+    <div class="col-6 col-md-2"><div class="article-box"><img src="Asset Final Project/Beli HP 15 Jutaan Biar Bisa Chat Mantan dengan Lebih Cepat.jpg" alt=""><div class="article-text">Beli HP 15 Jutaan Biar Bisa Chat Mantan dengan Lebih Cepat</div></div></div>
+  </div>
+</div>
+  <footer class="text-center">
+    <p class="mb-0 small">© 2025 TechHead. All rights reserved.</p>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
